@@ -3,7 +3,7 @@ import styled from "styled-components";
 const ButtonsContainer = ({ onButtonClick }) => {
   const buttonNames = [
     "C",
-    "B",
+    "⌫",
     "%",
     "/",
     "7",

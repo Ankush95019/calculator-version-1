@@ -23,6 +23,15 @@ function App() {
       const result = eval(calVal);
       setCalVal(result);
     }
+    else if(buttonText === '()'){
+      setCalVal(`(${calVal})`);
+    }
+    else if(buttonText === '⌫'){
+      let org = calVal;
+      let orgLen = org.length;
+      let newOrg = org.replace(org[orgLen-1],"");
+      setCalVal(newOrg);
+    }
     else{
       const newDisplayVal = calVal + buttonText;
       setCalVal(newDisplayVal);
@@ -33,6 +42,7 @@ function App() {
 
   return (
     <div className={styles.mainContainer}>
+      <h1>Simple Calculator using React</h1>
       <div className={styles.calculator}>
         <Heading></Heading>
         <Display displayVal={calVal} />
