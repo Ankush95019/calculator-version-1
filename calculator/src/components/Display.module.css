@@ -1,0 +1,14 @@
+.display {
+  margin: 10px;
+  width: 175px;
+  font-size: 30px;
+  color: azure;
+  text-align:right;
+  background-color: black;
+  position: relative;
+  top: 30px;
+  height: 40px;
+  border-style: none;
+
+  
+}
