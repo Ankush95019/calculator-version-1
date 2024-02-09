@@ -1,5 +1,5 @@
 import styles from "./ButtonsContainer.module.css";
-
+import styled from "styled-components";
 const ButtonsContainer = ({ onButtonClick }) => {
   const buttonNames = [
     "C",

@@ -2,6 +2,13 @@ import styles from "./App.module.css";
 import Display from "./components/Display";
 import ButtonsContainer from "./components/ButtonsContainer";
 import { useState } from "react";
+import Heading from "./components/Heading";
+
+
+
+
+
+
 
 function App() {
 
@@ -27,6 +34,7 @@ function App() {
   return (
     <div className={styles.mainContainer}>
       <div className={styles.calculator}>
+        <Heading></Heading>
         <Display displayVal={calVal} />
         <ButtonsContainer onButtonClick={onButtonClick}></ButtonsContainer>
       </div>
